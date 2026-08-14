@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev:web": "pnpm --filter aurelius/web dev",
+    "dev:mobile": "pnpm --filter aurelius/mobile start",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test"
   },
   "dependencies": {
     "next": "16.3.0",
