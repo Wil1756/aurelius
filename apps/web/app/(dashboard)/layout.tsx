@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import { SideBar } from "../../components/navigation/SideBar";
-
+import { Sidebar } from "../../components/navigation/Sidebar";
 interface DashboardLayoutProps {
   children: ReactNode
 }
@@ -8,11 +7,9 @@ interface DashboardLayoutProps {
 export default function DashboardLayout({children}: DashboardLayoutProps) {
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      <SideBar/>
+      <Sidebar/>
 
-      <div className="lg:pl-60">
-        {/* <MobileHeader /> */}
-
+      <div className="lg:pl-[248px]">
         <main className="min-h-screen p-4 sm:p-6 lg:p-8">
           {children}
         </main>
