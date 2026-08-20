@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:web": "pnpm --filter aurelius/web dev",
+    "dev:web": "pnpm --filter {./apps/web} dev",
     "dev:mobile": "pnpm --filter aurelius/mobile start",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
@@ -24,5 +24,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "packageManager": "pnpm@11.21.0"
+  "packageManager": "pnpm@11.21.0" 
 }

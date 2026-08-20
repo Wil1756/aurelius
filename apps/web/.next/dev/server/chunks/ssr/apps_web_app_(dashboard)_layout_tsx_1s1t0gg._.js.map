@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/Williams/Desktop/work/aurelius/apps/web/app/(dashboard)/layout.tsx"],"sourcesContent":["import { ReactNode } from \"react\";\nimport { Sidebar } from \"../../components/navigation/Sidear\";\ninterface DashboardLayoutProps {\n  children: ReactNode\n}\n\nexport default function DashboardLayout({children}: DashboardLayoutProps) {\n  return (\n    <div className=\"min-h-screen bg-[var(--background)]\">\n      <Sidebar/>\n\n      <div className=\"lg:pl-[248px]\">\n        {/* <MobileHeader /> */}\n        <main className=\"min-h-screen p-4 sm:p-6 lg:p-8\">\n          {children}\n        </main>\n      </div>\n    </div>\n  );\n}"],"names":["DashboardLayout","children","className","Sidebar"],"mappings":";;;;;;;;;;;;AAMe,SAASA,gBAAgB,EAACC,QAAQ,EAAuB;IACtE,qBACE,8bAAC;QAAIC,WAAU;;0BACb,8bAACC;;;;;0BAED,8bAAC;gBAAID,WAAU;0BAEb,cAAA,8bAAC;oBAAKA,WAAU;8BACbD;;;;;;;;;;;;;;;;;AAKX"}}]
+}

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/Williams/Desktop/work/aurelius/apps/web/app/loading.tsx"],"sourcesContent":["export function loading () {\n    return (\n        <div>loading</div>\n    )\n}"],"names":["loading"],"mappings":";;;;;;AAAO,SAASA;IACZ,qBACI,sdAAC;kBAAI;;;;;;AAEb"}}]
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///Users/Williams/Desktop/work/aurelius/apps/web/app/loading.tsx"],"sourcesContent":["// export function loading () {\n//     return (\n//         <div>loading</div>\n//     )\n// }"],"names":[],"mappings":"AAAA,+BAA+B;AAC/B,eAAe;AACf,6BAA6B;AAC7B,QAAQ;AACR,IAAI"}}]
 }
