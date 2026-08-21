@@ -45,16 +45,17 @@ export function SidebarItem ({label, href, icon}: SidebarItemsProps) {
     const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
     return (
         <Link href={href} aria-current={isActive ? "page" : undefined}
-            className={["group flex items-center gap-3 rounded-lg px-3 py-2.5",
-                "text-sm font-medium transition-colors duration-150", isActive 
-                ? ["bg-[rgba(37,214,162,0.10)]","text-[var(--primary)]", "shadow-[inset_0_0_0_1px_rgba(37,214,162,0.14)]",].join("")
-                :["text-[var(--muted)]", "hover:bg-white/[0.04]", "hover:text-[var(--foreground)]"].join(""),].join("")
+            className={["group flex items-center gap-2.5 rounded-lg px-2.5 py-2",
+                "text-[13px] font-medium transition-colors duration-150", 
+                isActive 
+                ? ["bg-[rgba(37,214,162,0.10)]","text-(--primary)", "shadow-[inset_0_0_0_1px_rgba(37,214,162,0.14)]",].join("")
+                :["text-(--muted)", "hover:bg-white/4", "hover:text-(--foreground)"].join(""),].join("")
             }
         >
             <Icon size={18} strokeWidth={isActive ? 2.2 : 1.8} className="shrink-0"/>
             <span className="truncate">{label}</span>
             {isActive && (
-                <span aria-hidden ="true" className="ml-auto h-1.5 w-1.5 rounded-full bg-[var(--primary)]"/>
+                <span aria-hidden ="true" className="ml-auto h-1.5 w-1.5 rounded-full bg-(--primary)"/>
             )}
         </Link>
     )

@@ -12,7 +12,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f
 ;
 function DashboardLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-[var(--background)]",
+        className: "min-h-screen bg-(--background)]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$Sidebar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Sidebar"], {}, void 0, false, {
                 fileName: "[project]/apps/web/app/(dashboard)/layout.tsx",
@@ -20,9 +20,9 @@ function DashboardLayout({ children }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "lg:pl-[248px]",
+                className: "lg:pl-44",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                    className: "min-h-screen p-4 sm:p-6 lg:p-8",
+                    className: "min-h-screen px-4 py-4 sm:px-5 lg:px-5 lg:py-5",
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/apps/web/app/(dashboard)/layout.tsx",
@@ -66,20 +66,20 @@ function Sidebar() {
     const secondaryItems = __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$navigation$2d$items$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["navigationItems"].filter((item)=>item.section === "secondary");
     const tertiaryItems = __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$navigation$2d$items$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["navigationItems"].filter((item)=>item.section === "tertiary");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-        className: "fixed inset-y-0 left-0 z-40 hidden w-[248px] border-r border-[var(--border)] bg-[var(--surface)] lg:block",
+        className: "fixed inset-y-0 left-0 z-40 hidden w-44 border-r border-(--border) bg-(--surface) lg:block",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-full flex-col px-3 py-4",
+            className: "flex h-full flex-col px-2.5 py-3",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mb-7 px-3 py-2",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            href: "/",
-                            className: "group inline-flex items-center gap-3",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-9 w-9 items-center justify-center rounded-lg border border-[rgba(56,189,248,0.30)] bg-[rgba(56,189,248,0.06)]",
+                    className: "mb-5 px-2 py-1",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/",
+                        className: "group flex items-center gap-2.5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex h-8 w-8 items-center shrink-0 justify-center rounded-lg border border-[rgba(56,189,248,0.30)] bg-[rgba(56,189,248,0.06)]",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-lg font-semibold text-[var(--seconadry)]",
+                                    className: "text-sm font-semibold text-(--seconadry)",
                                     children: "A"
                                 }, void 0, false, {
                                     fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
@@ -90,38 +90,39 @@ function Sidebar() {
                                 fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
                                 lineNumber: 16,
                                 columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "min-w-0",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "truncate text-[13px] font-semibold tracking-[0.06em] text-(--foreground)",
+                                        children: "AURELIUS"
+                                    }, void 0, false, {
+                                        fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                                        lineNumber: 20,
+                                        columnNumber: 23
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "truncate text-[8px] font-medium uppercase tracking-[0.08em] text-(--muted)",
+                                        children: "Finance Intelligence"
+                                    }, void 0, false, {
+                                        fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                                        lineNumber: 21,
+                                        columnNumber: 23
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                                lineNumber: 19,
+                                columnNumber: 21
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                            lineNumber: 15,
-                            columnNumber: 19
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[15px] font-semibold tracking-[0.08em] text-[var(--foreground)]",
-                                    children: "AURELIUS"
-                                }, void 0, false, {
-                                    fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 21
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[10px] font-medium uppercase tracking-[0.08em] text-[var(--muted)]",
-                                    children: "Finance Intelligence"
-                                }, void 0, false, {
-                                    fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                    lineNumber: 22,
-                                    columnNumber: 21
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                            lineNumber: 20,
-                            columnNumber: 19
-                        }, this)
-                    ]
-                }, void 0, true, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                        lineNumber: 15,
+                        columnNumber: 19
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
                     lineNumber: 14,
                     columnNumber: 17
@@ -144,7 +145,7 @@ function Sidebar() {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "my-5 border-t border-[var(--border)]",
+                    className: "my-5 border-t border-(--border)",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                         "aria-label": "Finance tools",
                         className: "space-y-1",
@@ -168,11 +169,11 @@ function Sidebar() {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "my-5 border-t border-[var(--border)]",
+                    className: "my-5 border-t border-(--border)",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             "aria-label": "Support",
-                            className: "mt-5 border-t border-[var(--border)]",
+                            className: "mt-5 border-t border-(--border)",
                             children: tertiaryItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$SidebarItem$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SidebarItem"], {
                                     label: item.label,
                                     href: item.href,
@@ -188,13 +189,13 @@ function Sidebar() {
                             columnNumber: 19
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-auto border-t border-[var(--border)] pt-4",
+                            className: "mt-auto border-t border-(--border) pt-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "button",
-                                className: "flex w-full items-center gap-3 rounded-xl border border-transparent p-2.5 text-left transition-colors hover:border-[var(--border)] hover:bg-white/[0.03]",
+                                className: "flex w-full items-center gap-3 rounded-xl border border-transparent p-2.5 text-left transition-colors hover:border-(--border) hover:bg-white/3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--surface-elevated)] text-sm font-semibold text-[var(--secondary)]",
+                                        className: "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-(--surface-elevated) text-sm font-semibold text-(--secondary)",
                                         children: "WO"
                                     }, void 0, false, {
                                         fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
@@ -205,7 +206,7 @@ function Sidebar() {
                                         className: "min-w-0 flex-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "truncate text-sm font-medium text-[var(--foreground)]",
+                                                className: "truncate text-sm font-medium text-(--foreground)",
                                                 children: "William Opio"
                                             }, void 0, false, {
                                                 fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
@@ -213,7 +214,7 @@ function Sidebar() {
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-[var(--muted)]",
+                                                className: "text-xs text-(--muted)",
                                                 children: "Premium Plan"
                                             }, void 0, false, {
                                                 fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
@@ -227,7 +228,7 @@ function Sidebar() {
                                         columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-xs text-[var(--muted)]",
+                                        className: "text-xs text-(--muted)",
                                         children: "⌄"
                                     }, void 0, false, {
                                         fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
@@ -260,7 +261,7 @@ function Sidebar() {
     }, void 0, false, {
         fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
         lineNumber: 11,
-        columnNumber: 9
+        columnNumber: 1
     }, this);
 }
 }),
