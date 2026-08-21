@@ -48,16 +48,16 @@ function SidebarItem({ label, href, icon }) {
         href: href,
         "aria-current": isActive ? "page" : undefined,
         className: [
-            "group flex items-center gap-3 rounded-lg px-3 py-2.5",
-            "text-sm font-medium transition-colors duration-150",
+            "group flex items-center gap-2.5 rounded-lg px-2.5 py-2",
+            "text-[13px] font-medium transition-colors duration-150",
             isActive ? [
                 "bg-[rgba(37,214,162,0.10)]",
-                "text-[var(--primary)]",
+                "text-(--primary)",
                 "shadow-[inset_0_0_0_1px_rgba(37,214,162,0.14)]"
             ].join("") : [
-                "text-[var(--muted)]",
-                "hover:bg-white/[0.04]",
-                "hover:text-[var(--foreground)]"
+                "text-(--muted)",
+                "hover:bg-white/4",
+                "hover:text-(--foreground)"
             ].join("")
         ].join(""),
         children: [
@@ -67,7 +67,7 @@ function SidebarItem({ label, href, icon }) {
                 className: "shrink-0"
             }, void 0, false, {
                 fileName: "[project]/apps/web/components/navigation/SidebarItem.tsx",
-                lineNumber: 54,
+                lineNumber: 55,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -75,15 +75,15 @@ function SidebarItem({ label, href, icon }) {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/apps/web/components/navigation/SidebarItem.tsx",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 13
             }, this),
             isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 "aria-hidden": "true",
-                className: "ml-auto h-1.5 w-1.5 rounded-full bg-[var(--primary)]"
+                className: "ml-auto h-1.5 w-1.5 rounded-full bg-(--primary)"
             }, void 0, false, {
                 fileName: "[project]/apps/web/components/navigation/SidebarItem.tsx",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 17
             }, this)
         ]

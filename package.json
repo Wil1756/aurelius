@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev:web": "pnpm --filter {./apps/web} dev",
-    "dev:mobile": "pnpm --filter aurelius/mobile start",
+    "dev:mobile": "pnpm --filter {./apps/mobile} start",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test"

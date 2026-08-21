@@ -6,6 +6,8 @@
 // // import { RecentTransactions } from "@/features/dashboard/components/RecentTransactions";
 // // import { GoalsProgress } from "@/features/dashboard/components/GoalsProgress";
 
+import { DashboardHeader } from "../../features/dashboard/components/DashboardHeader"
+
 // import { FinancialMetrics } from "../../components/dashboard/components/FinancialMetrics";
 
 // export default function DashboardPage() {
@@ -36,7 +38,13 @@
 export default function DashboardPage() {
   return (
     <main>
-      <h1>Aurelius Finance</h1>
+      <DashboardHeader/>
+
+      <section>
+        <div className="rounded-xl border border-(--border) bg-(--surface) p-6">
+          <p className="text-sm text-(--muted)">Dashboard content will be built next</p>
+        </div>
+      </section>
     </main>
   );
 }
