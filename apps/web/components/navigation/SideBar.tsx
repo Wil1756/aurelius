@@ -8,7 +8,7 @@ export function Sidebar() {
   const tertiaryItems = navigationItems.filter((item)=> item.section === "tertiary")
 
     return (
-<aside className="fixed inset-y-0 left-0 z-40 hidden w-44 border-r border-(--border) bg-(--surface) lg:block">
+          <aside className="fixed inset-y-0 left-0 z-40 hidden w-44 border-r border-(--border) bg-(--surface) lg:block">
             <div className="flex h-full flex-col px-2.5 py-3">
               {/* brand */}
                 <div className="mb-5 px-2 py-1">
@@ -23,28 +23,29 @@ export function Sidebar() {
                   </Link>
                 </div>
                 {/* primary navigation */}
-                <nav aria-label= "Primary navigation" className="space-y-1">
+                <nav aria-label= "Primary navigation" className="space-y-5">
                   {primaryItems.map((item)=> (
                     <SidebarItem key={item.href} label={item.label} href={item.href} icon={item.icon}/>
                   ))}
                 </nav>
                 {/* finance tools */}
-                <div className="my-5 border-t border-(--border)">
-                  <nav aria-label="Finance tools" className="space-y-1">
+                <div className="my-6 border-t border-(--border)">
+                  <nav aria-label="Finance tools" className="space-y-5 pt-4">
                     {secondaryItems.map((item)=> (
                       <SidebarItem key={item.href} label={item.label} href={item.href} icon={item.icon}/>
                     ))}
                   </nav>
                 </div>
                 {/* support*/}
-                <div className="my-5 border-t border-(--border)">
-                  <nav aria-label="Support" className="mt-5 border-t border-(--border)">
+                <div className="my-6 border-t border-(--border)">
+                  <nav aria-label="Support" className="space-y-5 pt-4">
                     {tertiaryItems.map((item)=> (
                       <SidebarItem key={item.href} label={item.label} href={item.href} icon={item.icon}/>
                     ))}
                   </nav>
+                  </div>
                   {/* user profile */}
-                  <div className="mt-auto border-t border-(--border) pt-4">
+                  <div className="mt-auto pt-4">
                     <button type="button" className="flex w-full items-center gap-3 rounded-xl border border-transparent p-2.5 text-left transition-colors hover:border-(--border) hover:bg-white/3">
                       <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-(--surface-elevated) text-sm font-semibold text-(--secondary)">WO</div>
                       <div className="min-w-0 flex-1">
@@ -55,7 +56,6 @@ export function Sidebar() {
                     </button>                 
                     </div>
                 </div>
-            </div>
         </aside>
     )
 }
