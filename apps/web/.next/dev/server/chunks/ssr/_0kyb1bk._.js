@@ -129,7 +129,7 @@ function Sidebar() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                     "aria-label": "Primary navigation",
-                    className: "space-y-1",
+                    className: "space-y-5",
                     children: primaryItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$SidebarItem$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SidebarItem"], {
                             label: item.label,
                             href: item.href,
@@ -145,10 +145,10 @@ function Sidebar() {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "my-5 border-t border-(--border)",
+                    className: "my-6 border-t border-(--border)",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                         "aria-label": "Finance tools",
-                        className: "space-y-1",
+                        className: "space-y-5 pt-4",
                         children: secondaryItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$SidebarItem$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SidebarItem"], {
                                 label: item.label,
                                 href: item.href,
@@ -169,88 +169,86 @@ function Sidebar() {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "my-5 border-t border-(--border)",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                            "aria-label": "Support",
-                            className: "mt-5 border-t border-(--border)",
-                            children: tertiaryItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$SidebarItem$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SidebarItem"], {
-                                    label: item.label,
-                                    href: item.href,
-                                    icon: item.icon
-                                }, item.href, false, {
-                                    fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                    lineNumber: 43,
-                                    columnNumber: 23
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                            lineNumber: 41,
-                            columnNumber: 19
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-auto border-t border-(--border) pt-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                className: "flex w-full items-center gap-3 rounded-xl border border-transparent p-2.5 text-left transition-colors hover:border-(--border) hover:bg-white/3",
+                    className: "my-6 border-t border-(--border)",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                        "aria-label": "Support",
+                        className: "space-y-5 pt-4",
+                        children: tertiaryItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$components$2f$navigation$2f$SidebarItem$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SidebarItem"], {
+                                label: item.label,
+                                href: item.href,
+                                icon: item.icon
+                            }, item.href, false, {
+                                fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                                lineNumber: 43,
+                                columnNumber: 23
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                        lineNumber: 41,
+                        columnNumber: 19
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                    lineNumber: 40,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mt-auto pt-4",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        className: "flex w-full items-center gap-3 rounded-xl border border-transparent p-2.5 text-left transition-colors hover:border-(--border) hover:bg-white/3",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-(--surface-elevated) text-sm font-semibold text-(--secondary)",
+                                children: "WO"
+                            }, void 0, false, {
+                                fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                                lineNumber: 50,
+                                columnNumber: 23
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "min-w-0 flex-1",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-(--surface-elevated) text-sm font-semibold text-(--secondary)",
-                                        children: "WO"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "truncate text-sm font-medium text-(--foreground)",
+                                        children: "William Opio"
                                     }, void 0, false, {
                                         fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                        lineNumber: 49,
-                                        columnNumber: 23
+                                        lineNumber: 52,
+                                        columnNumber: 25
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "min-w-0 flex-1",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "truncate text-sm font-medium text-(--foreground)",
-                                                children: "William Opio"
-                                            }, void 0, false, {
-                                                fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                                lineNumber: 51,
-                                                columnNumber: 25
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-(--muted)",
-                                                children: "Premium Plan"
-                                            }, void 0, false, {
-                                                fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                                lineNumber: 52,
-                                                columnNumber: 25
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                        lineNumber: 50,
-                                        columnNumber: 23
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xs text-(--muted)",
-                                        children: "⌄"
+                                        children: "Premium Plan"
                                     }, void 0, false, {
                                         fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                        lineNumber: 54,
-                                        columnNumber: 23
+                                        lineNumber: 53,
+                                        columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                                lineNumber: 48,
-                                columnNumber: 21
+                                lineNumber: 51,
+                                columnNumber: 23
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$29$2e$7_supports$2d$color$40$8$2e$1$2e$1_$5f40$types$2b$node$40$20$2e$19$2e$43_babel$2d$plugin$2d$_1073addb423f7a7e5b660d5ddef87066$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs text-(--muted)",
+                                children: "⌄"
+                            }, void 0, false, {
+                                fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                                lineNumber: 55,
+                                columnNumber: 23
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                            lineNumber: 47,
-                            columnNumber: 19
-                        }, this)
-                    ]
-                }, void 0, true, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
+                        lineNumber: 49,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
-                    lineNumber: 40,
-                    columnNumber: 17
+                    lineNumber: 48,
+                    columnNumber: 19
                 }, this)
             ]
         }, void 0, true, {
@@ -261,7 +259,7 @@ function Sidebar() {
     }, void 0, false, {
         fileName: "[project]/apps/web/components/navigation/Sidebar.tsx",
         lineNumber: 11,
-        columnNumber: 1
+        columnNumber: 11
     }, this);
 }
 }),

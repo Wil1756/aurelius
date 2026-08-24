@@ -6,10 +6,14 @@
   --surface: #0d1926;
   --surface-elevated: #111f2d;
   --border: #1c3042;
+  --primary-soft: rgba(37, 214, 162, 0.34);
   --primary: #1c3042;
   --secondary: #38bdf8;
+  --secondary-soft: rgba(56, 189, 248, 0.12);
   --warning: #f4b942;
+  --warning-soft: rgba(244, 185, 66, 0.12);
   --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.12);
   --muted: #8b9caf;
 }
 
