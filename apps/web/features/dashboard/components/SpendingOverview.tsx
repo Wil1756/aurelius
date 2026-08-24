@@ -46,7 +46,7 @@ const spendingColors = [
 
 export function SpendingOverview() {
     return (
-        <article className="min-w-0 overflow-hidden rounded-xl border border-(--border) bg-(--surface) p-4">
+        <article className="flex flex-col h-full min-w-0 overflow-hidden rounded-xl border border-(--border) bg-(--surface) p-4">
             <div>
                 <h2 className="text-sm font-semibold text-(--foreground)">Spending Overview</h2>
                 <p className="mt-1 text-xs text-(--muted)">Where your money went</p>
@@ -59,8 +59,8 @@ export function SpendingOverview() {
                                 data={spendingData}
                                 dataKey="amount"
                                 nameKey="name"
-                                innerRadius="58%"
-                                outerRadius="82%"
+                                innerRadius="68%"
+                                outerRadius="98%"
                                 paddingAngle={2}
                                 stroke="none"
                                 shape={(props:any) => {
@@ -85,7 +85,7 @@ export function SpendingOverview() {
                             />
                         </PieChart>
                     </ResponsiveContainer>
-                    <div className="mt-26 pointer-events-none flex flex-col items-center">
+                    <div className="mt-4 pointer-events-none flex flex-col items-center">
                         <span className="text-[10px] text-(--muted)">Total Spent</span>
                         <span className="mt-0.5 text-base font-semibold text-(--foreground)"> €4,280</span>
                     </div>

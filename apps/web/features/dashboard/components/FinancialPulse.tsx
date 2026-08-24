@@ -20,7 +20,7 @@ const insights = [
 
 export function FinancialPulse() {
     return (
-        <article className="min-w-0 overflow-hidden rounded-xl border border-(--border) bg-(--surface) p-4">
+        <article className="flex flex-col h-full min-w-0 overflow-hidden rounded-xl border border-(--border) bg-(--surface) p-4">
             <div>
                 <h2 className="text-sm font-semibold text-(--foreground)">Financial Plan</h2>
                 <p className="mt-1 text-xs text-(--muted)">A quick read on your financial worth</p>
