@@ -2,6 +2,14 @@ export type TransactionType = "income" | "expense"
 
 export type TransactionStatus = | "completed" | "pending" | "failed"
 
+export type TransactionsFilters = {
+    search: string
+    account: string
+    category: string
+    type: "all" | "income" | "expense"
+    dateRange: "all" | "7d" | "30d" | "90d"
+}
+
 export type Transaction = {
     id: string
     merchant: string
