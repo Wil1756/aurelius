@@ -32,7 +32,7 @@ function ChartTooltip({active, payload}: {active?: boolean; payload?:Array<{valu
 
 export function NetWorthTrend() {
     return (
-        <article className="min-w-0 overflow-hidden rounded-xl border-(--border) bg-(--surface) p-4">
+        <article className="flex flex-col h-full min-w-0 overflow-hidden rounded-xl border-(--border) bg-(--surface) p-4">
             <div className="flex items-center justify-between gap-4">
                 <div>
                     <h2 className="text-sm font-semibold text-(--foreground)">Net Worth Trend</h2>
