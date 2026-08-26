@@ -1,6 +1,6 @@
-import type { Transaction, TransactionsFilters } from "../types/transaction";
+import type { Transaction, TransactionFilters } from "../types/transaction";
 
-export function filterTransactions(transactions: Transaction[], filters: TransactionsFilters) {
+export function filterTransactions(transactions: Transaction[], filters: TransactionFilters) {
     const search = filters.search.trim().toLowerCase()
 
     return transactions.filter((transaction) => {
