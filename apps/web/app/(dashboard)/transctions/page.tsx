@@ -1,13 +1,15 @@
-import { TransactionsFilters } from "../../../features/transactions/components/TransactionFilters";
+import { TransactionFilters } from "../../../features/transactions/components/TransactionFilters";
 import { TransactionSummary } from "../../../features/transactions/components/TransactionSummary";
-import { TransactionsHeader } from "../../../features/transactions/components/TransactionsHeader";
+import { TransactionTable } from "../../../features/transactions/components/TransactionTable";
+import { TransactionHeader } from "../../../features/transactions/components/TransactionHeader";
+import { TransactionsWorkspace } from "../../../features/transactions/components/TransactionWorkspace";
 
 export default function TransactionPage() {
     return (
         <main className="min-w-0">
-            <TransactionsHeader/>
+            <TransactionHeader/>
             <TransactionSummary/>
-            <TransactionsFilters/>
+            <TransactionsWorkspace/>
         </main>
     )
 }

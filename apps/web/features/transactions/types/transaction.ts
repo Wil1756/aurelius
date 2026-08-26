@@ -2,7 +2,7 @@ export type TransactionType = "income" | "expense"
 
 export type TransactionStatus = | "completed" | "pending" | "failed"
 
-export type TransactionsFilters = {
+export type TransactionFilters = {
     search: string
     account: string
     category: string

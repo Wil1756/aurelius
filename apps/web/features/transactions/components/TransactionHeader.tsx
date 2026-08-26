@@ -1,6 +1,6 @@
 import { Plus } from "lucide-react";
 
-export function TransactionsHeader() {
+export function TransactionHeader() {
     return( 
         <header className="mb-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">

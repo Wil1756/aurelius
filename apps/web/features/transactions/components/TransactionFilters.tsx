@@ -1,17 +1,23 @@
 "use client"
 
 import { Search, SlidersHorizontal, X } from "lucide-react"
-import { useState } from "react";
-import type { TransactionsFilters} from "../types/transaction";
+import type { TransactionFilters } from "../types/transaction";
 
-const initialFilters: TransactionsFilters = {
-    search: "",
-    account: "all",
-    category: "all",
-    type: "all",
-    dateRange: "all"
-    
+type TFilterProps = {
+    filters: TransactionFilters
+    onFiltersChange: (
+        filters: TransactionFilters
+    ) => void
 }
+
+// const initialFilters: TransactionFilters = {
+//     search: "",
+//     account: "all",
+//     category: "all",
+//     type: "all",
+//     dateRange: "all"
+    
+// }
 
 const categories = [
     { value: "all", label: "All categories" },
@@ -43,8 +49,7 @@ const dateRanges = [
     { value: "90d", label: "Last 90 days" },
 ];
 
-export function TransactionsFilters() {
-    const [filters, setFilters] = useState<TransactionsFilters>(initialFilters);
+export function TransactionFilters({filters, onFiltersChange}: TFilterProps) {
 
     const hasActiveFilters =
         filters.search !== "" ||
@@ -53,20 +58,18 @@ export function TransactionsFilters() {
         filters.type !== "all" ||
         filters.dateRange !== "all";
     
-    function updateFilter<K extends keyof TransactionsFilters>(
+    function updateFilter<K extends keyof TransactionFilters>(
         key: K,
-        value: TransactionsFilters[K],
+        value: TransactionFilters[K],
     ){
-        setFilters((current) => (
-            {
-                ...current,
-                [key]: value
-            }
-        ))
+       onFiltersChange({
+            ...filters,
+            [key]: value
+       })
     }
 
     function resetFilters() {
-        setFilters(initialFilters)
+        onFiltersChange(filters)
     }
 
     return (
@@ -114,7 +117,7 @@ export function TransactionsFilters() {
                     </select>
                     <select
                         value={filters.type}
-                        onChange={(event) => updateFilter("type", event.target.value as TransactionsFilters["type"])}
+                        onChange={(event) => updateFilter("type", event.target.value as TransactionFilters["type"])}
                         aria-label="Filter by transaction type"
                         className="h-9 min-w-0 rounded-lg border border-(--border) bg-(--background) px-3 text-xs text-(--foreground) outline-none focus:border-(--secondary) lg:w-31"
                     >
@@ -126,7 +129,7 @@ export function TransactionsFilters() {
                     </select>
                     <select
                         value={filters.dateRange}
-                        onChange={(event) => updateFilter("dateRange", event.target.value as TransactionsFilters["dateRange"])}
+                        onChange={(event) => updateFilter("dateRange", event.target.value as TransactionFilters["dateRange"])}
                         aria-label="Filter by date range"
                         className="h-9 min-w-0 rounded-lg border border-(--border) bg-(--background) px-3 text-xs text-(--foreground) outline-none focus:border-(--secondary) lg:w-32"
                     >
