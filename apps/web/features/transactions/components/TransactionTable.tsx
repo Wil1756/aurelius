@@ -1,13 +1,40 @@
 import { ReceiptText } from "lucide-react";
-import { transactions } from "../data/tansaction";
 import { TransactionsRow } from "./TransactionRow";
-import type { Transaction } from "../types/transaction";
+import type { Transaction, TransactionSortDirection, TransactionSortField } from "../types/transaction";
 
 type TTableProps = {
     transactions: Transaction[]
+    sortField: TransactionSortField
+    sortDirection: TransactionSortDirection
+    onSortChange: (field: TransactionSortField) => void
 }
 
-export function TransactionTable({transactions}: TTableProps) {
+function SortHeader({label, field, activeField, direction, onSort}: {
+    label: string
+    field: TransactionSortField
+    activeField: TransactionSortField
+    direction: TransactionSortDirection
+    onSort: (field: TransactionSortField) => void
+}) {
+    const active = field === activeField
+
+    return (
+        <button
+            type="button"
+            onClick={() => onSort(field)}
+            className="inline-flex  items-center gap-1 text-left text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted) transition-colors hover:text-(--foreground)"
+        >
+            {label}
+            {active && (
+                <span aria-hidden="true"> 
+                    {direction === "asc" ? "↑" : "↓"}
+                </span>
+            )}
+        </button>
+    )
+}
+
+export function TransactionTable({transactions, sortField, sortDirection, onSortChange}: TTableProps) {
     const transactionCount = transactions.length
 
     return (
@@ -27,12 +54,28 @@ export function TransactionTable({transactions}: TTableProps) {
                 </button>
             </div>
             <div className="hidden border-b border-(--border) bg-white/1.5 px-4 py-2.5 md:grid md:grid-cols-[minmax(180px,1.5fr)_minmax(120px,1fr)_110px_115px_140px_105px] md:items-center md:gap-4">
-                <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Merchant</span>
+                <SortHeader 
+                    label="Merchant"
+                    field="merchant"
+                    activeField={sortField}
+                    direction={sortDirection}
+                    onSort={onSortChange}
+                />
                 <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Category</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Amount</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Date</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Account</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Status</span>
+                <SortHeader 
+                    label="Amount"
+                    field="amount"
+                    activeField={sortField}
+                    direction={sortDirection}
+                    onSort={onSortChange}
+                />
+                <SortHeader 
+                    label="Date"
+                    field="date"
+                    activeField={sortField}
+                    direction={sortDirection}
+                    onSort={onSortChange}
+                />
             </div>
             {transactionCount > 0 ? (
                 <div>
