@@ -24,3 +24,7 @@ export type Transaction = {
     account: string
     accountLastFour: string
 }
+
+export type TransactionSortField = | "date" | "amount" | "merchant"
+
+export type TransactionSortDirection = "asc" | "desc"
