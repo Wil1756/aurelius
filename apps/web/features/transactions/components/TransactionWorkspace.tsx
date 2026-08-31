@@ -19,7 +19,7 @@ const initialFilters: TransactionFilters = {
 }
 
 
-export function TransactionsWorkspace() {
+export function TransactionWorkspace() {
     const [filters, setFilters] = useState<TransactionFilters>(initialFilters)
     const [sortField, setSortField] = useState<TransactionSortField>("date")
     const [sortDirection, setSortDirection] = useState<TransactionSortDirection>("desc")
