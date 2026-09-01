@@ -1,5 +1,5 @@
 import { ReceiptText } from "lucide-react";
-import { TransactionsRow } from "./TransactionRow";
+import { TransactionRow } from "./TransactionRow";
 import type { Transaction, TransactionSortDirection, TransactionSortField } from "../types/transaction";
 
 type TTableProps = {
@@ -7,6 +7,7 @@ type TTableProps = {
     sortField: TransactionSortField
     sortDirection: TransactionSortDirection
     onSortChange: (field: TransactionSortField) => void
+    onTransactionSelect: (transaction: Transaction) => void
 }
 
 function SortHeader({label, field, activeField, direction, onSort}: {
@@ -34,7 +35,7 @@ function SortHeader({label, field, activeField, direction, onSort}: {
     )
 }
 
-export function TransactionTable({transactions, sortField, sortDirection, onSortChange}: TTableProps) {
+export function TransactionTable({transactions, sortField, sortDirection, onSortChange, onTransactionSelect}: TTableProps) {
     const transactionCount = transactions.length
 
     return (
@@ -80,7 +81,11 @@ export function TransactionTable({transactions, sortField, sortDirection, onSort
             {transactionCount > 0 ? (
                 <div>
                     {transactions.map((transaction) => (
-                        <TransactionsRow key={transaction.id} transaction={transaction}/>
+                        <TransactionRow 
+                            key={transaction.id} 
+                            transaction={transaction} 
+                            onSelect={onTransactionSelect}
+                        />
                     ))}
                 </div>
             ): (

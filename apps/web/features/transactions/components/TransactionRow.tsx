@@ -3,6 +3,7 @@ import type { Transaction } from "../types/transaction";
 
 type TRowProps = {
     transaction: Transaction
+    onSelect: (transaction: Transaction) => void
 }
 
 function formatDate(date: string) {
@@ -39,13 +40,15 @@ const statusConfig = {
     }
 }
 
-export function TransactionsRow({transaction}: TRowProps) {
+export function TransactionRow({transaction, onSelect}: TRowProps) {
     const isIncome = transaction.type === "income"
     const status = statusConfig[transaction.status]
     const StatusIcon = status.icon
 
     return (
-        <div className="border-b border-(--border) px-4 py-3 last:border-b-0">
+        <button type="button" aria-label={`view details for ${transaction.merchant}`}
+            onClick={() => onSelect(transaction)}
+            className="block w-full border-b border-(--border) px-4 py-3 text-left transition-colors hover:bg-white/2.5 last:border-b-0">
             <div className="hidden min-w-0 grid-cols-[minmax(180px,1.5fr)_minmax(120px,1fr)_110px_115px_140px_105px] items-center gap-4 md:grid">
                 <div className="flex min-w-0 items-center gap-3">
                     <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg 
@@ -77,18 +80,20 @@ export function TransactionsRow({transaction}: TRowProps) {
             </div>
             <div className="flex min-w-0 flex-col gap-3 md:hidden">
                 <div className="flex min-w-0 items-start justify-between gap-4">
-                    <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg 
-                        ${isIncome ? "bg-(--primary-soft) text-(--primary)" : "bg-white/4 text-(--muted)"}`}>
-                        <div>
-                            {isIncome ? (
-                                <ArrowDownLeft size={16} strokeWidth={1.8}/>
-                            ) : (
-                                <ArrowUpRight size={16} strokeWidth={1.8}/>
-                            )}
-                        </div>
-                        <div className="min-w-0">
-                            <p className="truncate text-xs font-medium text-(--foreground)">{transaction.merchant}</p>
-                            <p className="mt-0.5 truncate text-[10px] text-(--muted)">{transaction.category}</p>
+                    <div className="flex min-w-0 items-center gap-3">
+                        <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg 
+                            ${isIncome ? "bg-(--primary-soft) text-(--primary)" : "bg-white/4 text-(--muted)"}`}>
+                            <div>
+                                {isIncome ? (
+                                    <ArrowDownLeft size={16} strokeWidth={1.8}/>
+                                ) : (
+                                    <ArrowUpRight size={16} strokeWidth={1.8}/>
+                                )}
+                            </div>
+                            <div className="min-w-0">
+                                <p className="truncate text-xs font-medium text-(--foreground)">{transaction.merchant}</p>
+                                <p className="mt-0.5 truncate text-[10px] text-(--muted)">{transaction.category}</p>
+                            </div>
                         </div>
                     </div>
                     <span className={`shrink-0 text-xs font-semibold ${isIncome ? "text-(--primary)" : "text-(--foreground)"}`}>
@@ -106,6 +111,6 @@ export function TransactionsRow({transaction}: TRowProps) {
                     </span>
                 </div>
             </div>
-        </div>
+        </button>
     )
 }
