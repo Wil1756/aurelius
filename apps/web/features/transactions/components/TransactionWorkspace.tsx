@@ -4,11 +4,12 @@ import { useMemo, useState } from "react";
 import { TransactionFilters  as TFilters} from "./TransactionFilters";
 import { filterTransactions } from "../lib/filter-transactions";
 import { transactions } from "../data/transaction";
-import type { TransactionFilters, TransactionSortDirection, TransactionSortField } from "../types/transaction";
+import type { Transaction, TransactionFilters, TransactionSortDirection, TransactionSortField } from "../types/transaction";
 import { TransactionTable } from "./TransactionTable";
 import { sortTransaction } from "../lib/sort-transactions";
 import { paginateTransactions } from "../lib/paginate-transactions";
 import { TransactionPagination } from "./TransactionPagination";
+import { TransactionDetailsDrawer } from "./TransactionDetailsDrawer";
 
 const initialFilters: TransactionFilters = {
     search: "",
@@ -23,6 +24,7 @@ export function TransactionWorkspace() {
     const [filters, setFilters] = useState<TransactionFilters>(initialFilters)
     const [sortField, setSortField] = useState<TransactionSortField>("date")
     const [sortDirection, setSortDirection] = useState<TransactionSortDirection>("desc")
+    const [selectedTransaction, setSelectedTransaction] = useState<Transaction | null>(null)
     const [page, setPage] = useState(1)
 
     const PAGE_SIZE = 5
@@ -85,7 +87,7 @@ export function TransactionWorkspace() {
                     }
                     setPage(1)
                 }}
-
+                onTransactionSelect={setSelectedTransaction}
             />
             <TransactionPagination
                 page={paginatedTransactions.page}
@@ -93,6 +95,10 @@ export function TransactionWorkspace() {
                 totalItems={paginatedTransactions.totalItems}
                 pageSize={PAGE_SIZE}
                 onPageChange={setPage}
+            />
+            <TransactionDetailsDrawer
+                transaction={selectedTransaction}
+                onClose={() => setSelectedTransaction(null)}
             />
         </div>
     )
