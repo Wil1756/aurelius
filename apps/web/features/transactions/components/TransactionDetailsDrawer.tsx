@@ -68,7 +68,7 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
             >
                 <div className="flex min-h-full flex-col">
                     {/* header */}
-                    <div className="flex items-center justify-between border-b border-(--border) px-5 py-4">
+                    <div className="flex items-center justify-between border-(--border) px-5 py-4">
                         <div>
                             <p className="text-[10px] font-medium uppercase tracking-[0.12em] text-(--muted)">Transaction</p>
                             <h2 className="mt-1 text-sm font-semibold text-(--foreground)">Details</h2>
@@ -76,7 +76,7 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
                         <button type="button"
                             onClick={onClose}
                             aria-label="Close"
-                            className="flex h-8 w-8 items-center justify-items-center rounded-lg border border-(--border) text-(--muted) transition-colors hover:bg-white/4 hover:text-(--foreground) "
+                            className="flex h-8 w-8 items-center justify-center rounded-lg border border-(--border) text-(--muted) transition-colors hover:bg-white/4 hover:text-(--foreground) "
                         >
                             <X size={24} strokeWidth={1.8} />
                         </button>
@@ -99,7 +99,7 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
                         </div>
                     </div>
                     {/* { details} */}
-                    <div className="border-y border-(--border)">
+                    <div className="border-(--border)">
                         <div className="px-5 py-4">
                             <p className="text-[10px] font-medium uppercase tracking-widest text-(--muted)">Details</p>
                         </div>
@@ -137,7 +137,7 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
                         </p>
                     </div>
                     {/* {actions} */}
-                    <div className="mt-auto border-t border-(--border) p-5">
+                    <div className="mt-auto border-(--border) p-5">
                         <div className="grid gap-2">
                             <button type="button" 
                                 onClick={() => setIsEditing(true)}

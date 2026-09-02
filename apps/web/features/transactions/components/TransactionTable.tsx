@@ -23,7 +23,7 @@ function SortHeader({label, field, activeField, direction, onSort}: {
         <button
             type="button"
             onClick={() => onSort(field)}
-            className="inline-flex  items-center gap-1 text-left text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted) transition-colors hover:text-(--foreground)"
+            className="inline-flex items-center gap-1 text-left text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted) transition-colors hover:text-(--foreground)"
         >
             {label}
             {active && (
@@ -44,7 +44,7 @@ export function TransactionTable({transactions, sortField, sortDirection, onSort
         >
             <div className="flex items-center justify-between gap-4 border-b border-(--border) px-4 py-3">
                 <div>
-                    <h2 id="transactions-list-heeading"
+                    <h2 id="transactions-list-heading"
                         className="text-sm font-semibold text-(--foreground)"
                     >All transactions</h2>
                     <p className="mt-1 text-[10px] text-(--muted)">{transactionCount} transactions</p>
@@ -62,7 +62,7 @@ export function TransactionTable({transactions, sortField, sortDirection, onSort
                     direction={sortDirection}
                     onSort={onSortChange}
                 />
-                <span className="text-[10px] font-medium uppercase tracking-[0.08em] text-(--muted)">Category</span>
+                <span className="text-[16px] font-medium uppercase tracking-[0.08em] text-(--muted)">Category</span>
                 <SortHeader 
                     label="Amount"
                     field="amount"

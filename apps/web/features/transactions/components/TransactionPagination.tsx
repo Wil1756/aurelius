@@ -21,7 +21,7 @@ export function TransactionPagination({
     const end = Math.min(page * pageSize, totalItems)
 
     return (
-        <div className="flex flex-col gap-3 border-t border-(--border) px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 border-(--border) px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-[10px] text-(--muted)]">Showing{" "}
                 <span className="font-medium text-(--foreground)">{start}-{end}</span>{" "} of {" "}
                 <span className="font-medium text-(--foreground)">{totalItems}</span>{" "} transactions
