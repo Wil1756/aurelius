@@ -5,6 +5,7 @@ import { CalendarDays, CheckCircle2, CreditCard, FileText, Pencil, Tag, Trash2, 
 import  type { Transaction } from "../types/transaction"
 import type {ReactNode } from "react"
 import { EditTransactionForm } from "./EditTransactionForm"
+import { DeleteTransaction } from "./DeleteTransaction"
 
 type TransDetailsDrawerProps = {
     transaction: Transaction | null
@@ -29,6 +30,7 @@ function formatDate(date: string) {
 
 export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDrawerProps) {  
     const [isEditing, setIsEditing] = useState(false);
+    const [isDeleting, setIsDeleting] = useState(false)
 
     // nothing is selectDomainDefinition, so there is nothing to render
     if(!transaction) {
@@ -145,7 +147,9 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
                                 <Pencil size={14} strokeWidth={1.8}/>
                                 Edit transaction
                             </button>
-                            <button type="button" className="flex h-10 items-center justify-center gap-2 rounded-lg border border-(--border) text-xs font-medium text-(--danger) transition-colors hover:bg-(--danger)/6">
+                            <button type="button"
+                                onClick={() => setIsDeleting(true)}
+                                className="flex h-10 items-center justify-center gap-2 rounded-lg border border-(--border) text-xs font-medium text-(--danger) transition-colors hover:bg-(--danger)/6">
                                 <Trash2 size={14} strokeWidth={1.8}/>
                                 Delete transaction
                             </button>
@@ -153,6 +157,18 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
                     </div>
                 </div>
             </aside>
+            {/* delete Dialog */}
+            {isDeleting && (
+                <DeleteTransaction
+                    transaction={transaction}
+                    onCancel={() => setIsDeleting(false)}
+                    onConfirm={() => {
+                        console.log("Delete Transaction", transaction)
+                        setIsDeleting(false)
+                        onClose()
+                    }}
+                />
+            )}
         </>
     )
 }
