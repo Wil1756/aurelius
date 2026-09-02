@@ -75,7 +75,7 @@ export function TransactionFilters({filters, onFiltersChange}: TFilterProps) {
     return (
         <section 
             aria-label="Transaction filters"
-            className="mb-4 rounded-xl border border-(--border) bg-(--surface) p-3"
+            className="mb-4 mt-4 rounded-xl border border-(--border) bg-(--surface) p-3"
         >
             <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
                 <div className="relative min-w-0 flex-1">

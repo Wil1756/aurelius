@@ -32,7 +32,7 @@ export function TransactionSummary() {
 
                 return (
                     <article key={item.label}
-                        className="min-w-0 rounded-xl border border-(--border) bg-(--surface) p-4"
+                        className="min-w-0 mt-3 rounded-xl border border-(--border) bg-(--surface) p-4"
                     >
                         <div className="flex items-center justify-between">
                             <div className={`flex h-8 w-8 items-center justify-center rounded-lg ${item.iconClassName}`}>
