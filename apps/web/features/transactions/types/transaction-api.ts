@@ -1,11 +1,12 @@
 import type { Transaction } from "./transaction"
+import { CreateTransactionInput } from "../validation/transaction-api-schema"
 
-export type TransactionsResponse = {
+export type TransactionResponse = {
     data: Transaction[]
 }
 
-export type TransactionResponse = {
-    data: Transaction
+export type CreateTransactionResponse = {
+    data: CreateTransactionInput
 }
 
 export type ApiErrorResponse = {

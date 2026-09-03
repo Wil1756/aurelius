@@ -1,6 +1,6 @@
-import { ApiErrorResponse, TransactionsResponse } from "../types/transaction-api";
+import { ApiErrorResponse, TransactionResponse } from "../types/transaction-api";
 
-export async function getTransactions(): Promise<TransactionsResponse>{
+export async function getTransactions(): Promise<TransactionResponse>{
     const response = await fetch("api/transactions", {
         method: "GET",
         headers: {

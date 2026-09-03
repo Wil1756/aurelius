@@ -1,13 +1,10 @@
 import {z} from "zod";
 import { NextResponse } from "next/server";
-import type { Transaction } from "../../../features/transactions/types/transaction";
-import { transactionFormSchema } from "../../../features/transactions/validation/transaction-schema";
+import { createTransactionSchema } from "../../../features/transactions/validation/transaction-api-schema";
 
 export async function GET() {
-    const transactions: Transaction[] = []
-
     return NextResponse.json({
-        data: transactions
+        data: []
     })
 }
 
@@ -15,7 +12,7 @@ export async function POST(request: Request) {
     try {
         const body = await request.json()
 
-        const result = transactionFormSchema.safeParse(body)
+        const result = createTransactionSchema.safeParse(body)
 
         if(!result.success) {
             return NextResponse.json(
@@ -28,13 +25,10 @@ export async function POST(request: Request) {
                 }
             )
         }
-        const transaction = {
-            ...result.data,
-            amount: Number(result.data.amount)
-        }
+
         return NextResponse.json(
             {
-                data: transaction
+                data: result.data
             },
             {
                 status: 201
