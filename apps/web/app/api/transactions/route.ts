@@ -8,7 +8,7 @@ export async function GET() {
         const transactions = await transactionRepository.getTransactions()
 
         return NextResponse.json({
-            data: []
+            data: transactions
         })
     } catch {
         return NextResponse.json(
