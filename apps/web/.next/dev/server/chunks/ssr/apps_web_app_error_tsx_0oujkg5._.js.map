@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///Users/Williams/Desktop/work/aurelius/apps/web/app/error.tsx"],"sourcesContent":["// export function error () {\n//     return (\n//         <div>error;\n//         </div>\n//     )\n// }"],"names":[],"mappings":"AAAA,6BAA6B;AAC7B,eAAe;AACf,sBAAsB;AACtB,iBAAiB;AACjB,QAAQ;AACR,IAAI"}}]
-}
