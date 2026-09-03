@@ -1,11 +1,26 @@
 import {z} from "zod";
 import { NextResponse } from "next/server";
 import { createTransactionSchema } from "../../../features/transactions/validation/transaction-api-schema";
+import { transactionRepository } from "../../../features/transactions/repositories";
 
 export async function GET() {
-    return NextResponse.json({
-        data: []
-    })
+    try {
+        const transactions = await transactionRepository.getTransactions()
+
+        return NextResponse.json({
+            data: []
+        })
+    } catch {
+        return NextResponse.json(
+            {
+                error: "Failed to fetch transactions",
+            },
+            {
+                status: 500
+            }
+        )
+    }
+    
 }
 
 export async function POST(request: Request) {
@@ -26,9 +41,13 @@ export async function POST(request: Request) {
             )
         }
 
+        const transaction = await transactionRepository.createTransaction(
+            result.data
+        )
+
         return NextResponse.json(
             {
-                data: result.data
+                data: transaction
             },
             {
                 status: 201

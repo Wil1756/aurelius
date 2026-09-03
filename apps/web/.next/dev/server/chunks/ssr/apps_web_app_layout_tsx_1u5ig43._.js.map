@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///Users/Williams/Desktop/work/aurelius/apps/web/app/layout.tsx"],"sourcesContent":["// export function layout () {\n//     return (\n//         <div>layout</div>\n//     )\n// }"],"names":[],"mappings":"AAAA,8BAA8B;AAC9B,eAAe;AACf,4BAA4B;AAC5B,QAAQ;AACR,IAAI"}}]
-}
