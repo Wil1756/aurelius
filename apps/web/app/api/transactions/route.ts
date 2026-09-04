@@ -12,12 +12,8 @@ export async function GET() {
         })
     } catch {
         return NextResponse.json(
-            {
-                error: "Failed to fetch transactions",
-            },
-            {
-                status: 500
-            }
+            { error: "Failed to fetch transactions"},
+            { status: 500}
         )
     }
     
@@ -35,32 +31,20 @@ export async function POST(request: Request) {
                     error: "Invalid transaction data",
                     details: z.flattenError(result.error),
                 },
-                {
-                    status: 400,
-                }
+                { status: 400}
             )
         }
 
-        const transaction = await transactionRepository.createTransaction(
-            result.data
-        )
+        const transaction = await transactionRepository.createTransaction(result.data)
 
         return NextResponse.json(
-            {
-                data: transaction
-            },
-            {
-                status: 201
-            }
+            {data: transaction},
+            { status: 201 }
         )
     } catch {
         return NextResponse.json(
-            {
-                error: "Invalid request body",
-            },
-            {
-                status: 400
-            }
+            { error: "Invalid request body"},
+            { status: 400}
         )
     }
 }
