@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { TransactionFilters  as TFilters} from "./TransactionFilters";
 import { filterTransactions } from "../lib/filter-transactions";
 import { transactions } from "../data/transaction";
@@ -10,6 +10,7 @@ import { sortTransaction } from "../lib/sort-transactions";
 import { paginateTransactions } from "../lib/paginate-transactions";
 import { TransactionPagination } from "./TransactionPagination";
 import { TransactionDetailsDrawer } from "./TransactionDetailsDrawer";
+import { getTransactions } from "../lib/transaction-api";
 
 const initialFilters: TransactionFilters = {
     search: "",
@@ -19,18 +20,28 @@ const initialFilters: TransactionFilters = {
     dateRange: "all"
 }
 
+const PAGE_SIZE = 5
+
 
 export function TransactionWorkspace() {
+    const [transactions, setTransactions] = useState<Transaction[]>([])
     const [filters, setFilters] = useState<TransactionFilters>(initialFilters)
     const [sortField, setSortField] = useState<TransactionSortField>("date")
     const [sortDirection, setSortDirection] = useState<TransactionSortDirection>("desc")
     const [selectedTransaction, setSelectedTransaction] = useState<Transaction | null>(null)
     const [page, setPage] = useState(1)
 
-    const PAGE_SIZE = 5
-    const filteredTransactions = useMemo(
-        () => filterTransactions(transactions, filters),[filters]
-    )
+    useEffect(() => {
+        async function loadTransactions() {
+            try {
+                const response = await getTransactions()
+                setTransactions(response.data)
+            } catch (error) {console.error("Failed to load transactions")}
+        }
+        loadTransactions()
+    },[])
+    
+    const filteredTransactions = useMemo(() => filterTransactions(transactions, filters),[filters])
 
     const sortedTransactions = useMemo(
         () => 
