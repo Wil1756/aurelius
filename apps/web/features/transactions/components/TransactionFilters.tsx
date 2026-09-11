@@ -10,15 +10,6 @@ type TFilterProps = {
     ) => void
 }
 
-// const initialFilters: TransactionFilters = {
-//     search: "",
-//     account: "all",
-//     category: "all",
-//     type: "all",
-//     dateRange: "all"
-    
-// }
-
 const categories = [
     { value: "all", label: "All categories" },
     { value: "groceries", label: "Groceries" },

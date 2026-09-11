@@ -1,4 +1,7 @@
-import { ApiErrorResponse, DeleteTransactionResponse,  TransactionResponse, TransactionsResponse } from "../types/transaction-api";
+
+import { ApiErrorResponse, CreateTransactionResponse, DeleteTransactionResponse,  TransactionResponse, TransactionsResponse } from "../types/transaction-api";
+
+
 
 export async function getTransactions(): Promise<TransactionsResponse>{
     const response = await fetch("/api/transactions", {
@@ -12,6 +15,31 @@ export async function getTransactions(): Promise<TransactionsResponse>{
         const error = (await response.json()) as ApiErrorResponse
 
         throw new Error(error.error || "Failed to fetch transactions")
+    }
+    return response.json()
+}
+
+export async function  createTransaction(
+    data: {
+        merchant: string
+        amount: number 
+        category: string
+        date: string
+        description: string
+    }
+): Promise<CreateTransactionResponse> {
+    const response = await fetch("/api/transactions", {
+        method: "POST",
+        headers: {
+            "content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+
+    if(!response.ok) {
+        const error = (await response.json()) as ApiErrorResponse
+
+        throw new Error(error.error || "Failed to create transaction")
     }
     return response.json()
 }

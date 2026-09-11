@@ -1,5 +1,5 @@
-import { TransactionSummary } from "../../../features/transactions/components/TransactionSummary";
 import { TransactionHeader } from "../../../features/transactions/components/TransactionHeader";
+import { TransactionSummary } from "../../../features/transactions/components/TransactionSummary";
 import { TransactionWorkspace } from "../../../features/transactions/components/TransactionWorkspace";
 
 export default function TransactionPage() {
