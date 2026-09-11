@@ -3,7 +3,6 @@
 import { useMemo, useState, useEffect } from "react";
 import { TransactionFilters  as TFilters} from "./TransactionFilters";
 import { filterTransactions } from "../lib/filter-transactions";
-import { transactions } from "../data/transaction";
 import type { Transaction, TransactionFilters, TransactionSortDirection, TransactionSortField } from "../types/transaction";
 import { TransactionTable } from "./TransactionTable";
 import { sortTransaction } from "../lib/sort-transactions";
@@ -36,8 +35,11 @@ export function TransactionWorkspace() {
             try {
                 const response = await getTransactions()
                 setTransactions(response.data)
-            } catch (error) {console.error("Failed to load transactions")}
+            } catch (error) {
+                console.error("Failed to load transactions:", error)
+            }
         }
+    
         loadTransactions()
     },[])
     

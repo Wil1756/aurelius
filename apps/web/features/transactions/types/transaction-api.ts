@@ -5,6 +5,10 @@ export type TransactionsResponse = {
     data: Transaction[]
 }
 
+export type CreateTransactionResponse = {
+    data: CreateTransactionInput
+}
+
 export type TransactionResponse = {
     data: Transaction
 }
