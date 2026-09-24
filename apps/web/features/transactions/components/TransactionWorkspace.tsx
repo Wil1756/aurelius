@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 import { TransactionFilters  as TFilters} from "./TransactionFilters";
 import { filterTransactions } from "../lib/filter-transactions";
 import type { Transaction, TransactionFilters, TransactionSortDirection, TransactionSortField } from "../types/transaction";
@@ -30,7 +30,14 @@ export function TransactionWorkspace() {
     const [selectedTransaction, setSelectedTransaction] = useState<Transaction | null>(null)
     const [page, setPage] = useState(1)
 
+    const hasLoadedTransactions = useRef(false)
+
     useEffect(() => {
+        if(hasLoadedTransactions.current) {
+            return
+        }
+
+        hasLoadedTransactions.current = true
         async function loadTransactions() {
             try {
                 const response = await getTransactions()
@@ -43,7 +50,7 @@ export function TransactionWorkspace() {
         loadTransactions()
     },[])
     
-    const filteredTransactions = useMemo(() => filterTransactions(transactions, filters),[filters])
+    const filteredTransactions = useMemo(() => filterTransactions(transactions, filters),[transactions, filters])
 
     const sortedTransactions = useMemo(
         () => 
@@ -76,6 +83,17 @@ export function TransactionWorkspace() {
         setFilters(nextFilters)
         setPage(1)
     }
+
+    function handleTransactionUpdated(updatedTransaction: Transaction){
+        setTransactions((current) => 
+            current.map((transaction) => 
+            transaction.id === updatedTransaction.id 
+                ? updatedTransaction
+                : transaction
+            )
+        ) 
+        setSelectedTransaction(updatedTransaction)
+    }   
 
     return (
         <div className="min-w-0">
@@ -112,6 +130,7 @@ export function TransactionWorkspace() {
             <TransactionDetailsDrawer
                 transaction={selectedTransaction}
                 onClose={() => setSelectedTransaction(null)}
+                onTransactionUpdated={handleTransactionUpdated}
             />
         </div>
     )

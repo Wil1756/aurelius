@@ -10,6 +10,7 @@ import { DeleteTransaction } from "./DeleteTransaction"
 type TransDetailsDrawerProps = {
     transaction: Transaction | null
     onClose: () => void
+    onTransactionUpdated: (transaction: Transaction) => void
 }
 
 function formatAmount(amount: number) {
@@ -28,7 +29,7 @@ function formatDate(date: string) {
     }).format(new Date(`${date}T00:00:00`))
 }
 
-export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDrawerProps) {  
+export function TransactionDetailsDrawer({transaction, onClose, onTransactionUpdated}: TransDetailsDrawerProps) {  
     const [isEditing, setIsEditing] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false)
 
@@ -49,7 +50,7 @@ export function TransactionDetailsDrawer({transaction, onClose}: TransDetailsDra
                     transaction={transaction}
                     onCancel={() => setIsEditing(false)}
                     onSave={(updatedTransaction) => {
-                        console.log("updated transaction:", updatedTransaction)
+                        onTransactionUpdated(updatedTransaction)
                         setIsEditing(false)
                     }}
                 />

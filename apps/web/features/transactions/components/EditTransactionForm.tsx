@@ -5,6 +5,7 @@ import type { ReactNode, SubmitEvent } from "react"
 import type { Transaction } from "../types/transaction"
 import { useState } from "react"
 import { transactionFormSchema, type TransactionFormValues } from "../validation/transaction-schema"
+import { updateTransaction } from "../lib/transaction-api"
 
 
 type EditTransFormProps = {
@@ -30,10 +31,12 @@ export function EditTransactionForm({transaction, onSave, onCancel}: EditTransFo
     const [category, setCategory] = useState(transaction.category)
     const [date, setDate] = useState(transaction.date)
     const [description, setDescription] = useState(transaction.description)
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitError, setSubmitError] = useState("")
 
     const [errors, setErrors] = useState<Partial<Record<keyof TransactionFormValues, string>>>({})
 
-    function handleSubmit(e: SubmitEvent<HTMLFormElement>) {
+    async function handleSubmit(e: SubmitEvent<HTMLFormElement>) {
         e.preventDefault()
 
         const result = transactionFormSchema.safeParse({
@@ -67,16 +70,33 @@ export function EditTransactionForm({transaction, onSave, onCancel}: EditTransFo
             return
         }
 
+        setSubmitError("")
+
+        setIsSubmitting(true)
+
         const validatedData = result.data
 
-        onSave({
-            ...transaction,
-            merchant: validatedData.merchant,
-            amount: Number(validatedData.amount),
-            category: validatedData.category,
-            date: validatedData.date,
-            description: validatedData.description
-        })
+        try {
+            const response = await updateTransaction(
+                transaction.id,
+                {
+                    merchant: validatedData.merchant,
+                    amount: Number(validatedData.amount),
+                    category: validatedData.category,
+                    date: validatedData.date,
+                    description: validatedData.description
+                }
+            )
+            onSave(response.data)
+        } catch (error) {
+            setSubmitError(
+                error instanceof Error
+                    ? error.message
+                    : "Failed to update transaction"
+            )
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     return (
