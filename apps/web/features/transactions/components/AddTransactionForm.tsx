@@ -128,7 +128,7 @@ export function AddTransactionForm({onSuccess, onCancel}: AddTransFormProps) {
                             value={values.merchant}
                             onChange={(e) => handleChange("merchant", e.target.value)}
                             aria-invlaid={Boolean(errors.merchant)}
-                            className="n-10 w-full rounded-lg border border-(--border) bg-(--surfaceElevated) px-3 text-xs text-(--foreground) outline-none transition-colors placeholder:text-(--muted) focus:border-(--primary)"
+                            className="h-10 w-full rounded-lg border border-(--border) bg-(--surfaceElevated) px-3 text-xs text-(--foreground) outline-none transition-colors placeholder:text-(--muted) focus:border-(--primary)"
                             placeholder="e.g. REWE"
                         />
 
@@ -230,7 +230,7 @@ export function AddTransactionForm({onSuccess, onCancel}: AddTransFormProps) {
                                 Cancel
                             </button>
                             <button type="submit" disabled={isSubmitting}
-                                className="h-10 flex-1 rounded-lg bg-(--primary) text-xs font-semibold text-[#06151A] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                                className="h-10 flex p-2  rounded-lg bg-(--primary) text-xs font-semibold text-[#06151A] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
                             >
                                 {isSubmitting ? "Saving.." : "Add Transaction"}
                             </button>
